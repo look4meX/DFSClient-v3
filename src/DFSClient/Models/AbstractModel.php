@@ -292,6 +292,9 @@ abstract class AbstractModel
             return $mappedModel;
         }
 
+        //tutaj
+        return json_encode($validResponse);	    
+	    
         $mappedModel = $mapper->paveData(json_encode($validResponse), null, $resultShouldTransformedToArray);
 
         return $mappedModel;
